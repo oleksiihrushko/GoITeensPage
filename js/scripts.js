@@ -1,0 +1,1 @@
+"use strict";var burgerbtn=document.querySelector(".icon--open"),closebtn=document.querySelector(".icon--close"),burgertoggle=document.querySelector(".header-modal"),headermenu=document.querySelector(".header-main");burgerbtn.onclick=function(){burgertoggle.style.height="100%"},closebtn.onclick=function(){burgertoggle.style.height="0"};
