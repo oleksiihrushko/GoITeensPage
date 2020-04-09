@@ -1,0 +1,166 @@
+.directions {
+    background-color: #fff;
+
+    &__title {
+        @include font(20px, 78px, 700);
+        color: #272727;
+        text-transform: uppercase;
+        padding-left: 45px;
+        position: relative;
+
+        @media (min-width: 768px) {
+            font-size: 33px;
+            padding-left: 53px;
+            margin-bottom: 6px;
+        }
+
+        @media (min-width: 1680px) {
+            margin-bottom: 46px;
+        }
+
+        &::before {
+            display: block;
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgb(233, 172, 56);
+            position: absolute;
+            top: 24px;
+            left: 2px;
+            background-image: url(../../images/icons/title_icons/title_icon_1_white.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        justify-content: space-between;
+
+        @media (min-width: 768px) {
+            margin-bottom: 47px;
+        }
+    }
+
+    &__item {
+        padding-left: 44px;
+        padding-top: 27px;
+        width: 280px;
+        height: 225px;
+        border-radius: 7px;
+        background-color: rgb(250, 250, 250);
+        transition-property: all;
+        transition-duration: 200ms;
+        transition-timing-function: linear;
+
+        @media (min-width: 768px) {
+            width: 309px;
+            height: 295px;
+            padding-left: 57px;
+            padding-top: 60px;
+            padding-right: 40px;
+        }
+
+        @media (min-width: 1680px) {
+            width: 325px;
+            height: 295px;
+            padding-left: 62px;
+        }
+
+        &:hover {
+            background-color: #e9ac38;
+            transition-property: background-color, transform;
+            transition-duration: 200ms;
+            transition-timing-function: linear;
+
+            @media (min-width: 1680px) {
+                transform: scale(1.03);
+            }
+        }
+
+        &:hover .directions__item-age {
+            color: #fff;
+            transition-property: color;
+            transition-duration: 200ms;
+            transition-timing-function: linear;
+        }
+
+        &:hover .directions__item-text {
+            transition-property: color;
+            transition-duration: 200ms;
+            transition-timing-function: linear;
+            color: #fff;
+        }
+
+        &:hover .directions__item-link-svg{
+            fill: #fff;
+            transition-property: fill;
+            transition-duration: 200ms;
+            transition-timing-function: linear;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 1px;
+            }
+        }
+
+        &-title {
+            @include font(25px, 25px, 700);
+            color: #272727;
+            margin-bottom: 25px;
+
+            @media (min-width: 768px) {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        &-text {
+            @include font(16px, 20px, 400);
+            color: #444444;
+            margin-bottom: 35px;
+        }
+
+        &-age {
+            @include font(30px, 30px, 700);
+            color: #e9ac38;
+            position: relative;
+            margin-bottom: 8px;
+
+            @media (min-width: 768px) {
+                font-size: 40px;
+                margin-bottom: 21px;
+            }
+
+            &-2 {
+                @include font(13px, 22px, 400);
+                text-decoration: underline;
+                position: absolute;
+                top: -15px;
+            }
+        }
+
+        &-link {
+            display: block;
+            width: 26px;
+            height: 21px;
+
+            &-svg {
+                width: 100%;
+                height: 100%;
+                fill: #e9ac38;
+            }
+        }
+
+    }
+}
+
+
+
+  
