@@ -1,0 +1,155 @@
+.structure_header--title::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icons/title_icons/title_icon_structure1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e9ac38;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.structure_header--title{
+    @include font(20px, 78px, 700);
+    text-transform: uppercase;
+    font-family: $secondary-font;
+}
+
+.structure_info {
+    margin-bottom: 60px;
+
+&_list{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+&_item{
+    width: 280px;
+    height: 260px;
+    background-color: #faebd0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+
+&_item:nth-child(2){
+    background-color: #fbdcd2;
+}
+
+&_item:nth-child(3){
+    background-color: #e2d8f5;
+}
+
+&_item:nth-child(4){
+    background-color: #d9f0ef;
+}
+
+&_item:nth-child(n+4){
+    margin-bottom: 0;
+}
+
+&_item--wrapper{
+    margin: 18px;
+    width: 244px;
+    height: 226px;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: dashed;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+&_item--text{
+    margin: 28px;
+}
+
+&_item--title{
+    @include font(26px, 28px, 700);
+    font-family: $secondary-font;
+    color: rgb(39, 39, 39);
+    margin-bottom: 20px;
+}
+
+&_item--subscription{
+    @include font(16px, 22px, 500);
+    font-family: $main-font;
+    color: rgb(70, 70, 70);
+    margin-bottom: 20px;
+}
+
+}
+
+@media (min-width: 768px) {
+    .structure_header--title::before{
+        content: '';
+        background-image: url(../images/icons/title_icons/title_icon_structure2.svg);
+    }
+
+    .structure_header--title{
+        @include font(32px, 78px, 700);
+        text-transform: uppercase;
+        font-family: $secondary-font;
+        margin-bottom: 22px;
+    }
+
+    .structure_info {
+        margin-bottom: 70px;
+
+        &_item{
+            width: 300px;
+            height: 292px;
+            margin-bottom: 20px;
+        }
+
+        &_item:nth-child(n+3){
+            margin-bottom: 0;
+        }
+
+        &_item--wrapper{
+            width: 264px;
+            height: 260px;
+        }
+
+        &_item--title{
+            @include font(30px, 28px, 700);
+        }
+    }
+
+ 
+}
+
+@media (min-width: 1680px) {
+    .structure_header--title{
+        padding-top: 110px;
+        margin-bottom: 60px;
+    }
+
+    .structure_info {
+        margin-bottom: 110px;
+
+        &_item{
+            width: 300px;
+            height: 292px;
+            margin-bottom: 0;
+        }
+
+        &_item--wrapper{
+            width: 264px;
+            height: 260px;
+        }
+
+        &_item--title{
+            @include font(30px, 28px, 700);
+            padding-top: 20px;
+        }
+
+        &_item--subscription{
+            @include font(18px, 26px, 500);
+        }
+    }
+  }
