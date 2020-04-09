@@ -49,6 +49,12 @@
     border-radius: 5px;
 }
 
+.footer_top_task--btn:focus{
+    background-color: rgb(220, 145, 41);
+    box-shadow: 0px 3px 5px 0px rgba(233, 172, 56, 0.4);
+    border-radius: 5px;
+}
+
 .footer_social_media--list{
     display: flex;
     padding-bottom: 32px;
@@ -71,6 +77,12 @@
 
 .footer_social_media--telegram:hover{
     background-color: #e9ac38;
+    border: solid 2px #ffffff;
+}
+
+.footer_social_media--telegram:focus{
+    background-color: #e9ac38;
+    border: solid 2px #ffffff;
 }
 
 .footer_social_media--youtube{
@@ -82,6 +94,12 @@
 
 .footer_social_media--youtube:hover{
     background-color: #e9ac38;
+    border: solid 2px #ffffff;
+}
+
+.footer_social_media--youtube:focus{
+    background-color: #e9ac38;
+    border: solid 2px #ffffff;
 }
 
 .footer_social_media--facebook{
@@ -93,6 +111,12 @@
 
 .footer_social_media--facebook:hover{
     background-color: #e9ac38;
+    border: solid 2px #ffffff;
+}
+
+.footer_social_media--facebook:focus{
+    background-color: #e9ac38;
+    border: solid 2px #ffffff;
 }
 
 .footer_bottom{
@@ -109,4 +133,12 @@
 
 .footer_bottom_box a{
     color: rgb(98, 98, 99);
+}
+
+.footer_bottom_box a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.footer_bottom_box a:focus{
+    color: rgb(255, 255, 255);
 }
