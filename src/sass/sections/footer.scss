@@ -1,0 +1,29 @@
+.footer_box{
+    background-color: #222222;
+}
+
+.footer_top {
+    margin-left: 46px;
+}
+
+.footer_top_logo{
+    padding-top: 42px;
+    margin-bottom: 14px;
+}
+
+.footer_top_logo--item {
+    display: block;
+    background-image: url(../images/icons/goiteens_logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 108px;
+    height: 30px;
+}
+
+.footer_top_adress,
+.footer_top_contacts{
+    @include font(14px, 20px,400);
+    color: rgb(150, 153, 166);
+    font-family: $main-font;
+    margin-bottom: 30px;
+}
