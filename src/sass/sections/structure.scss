@@ -1,7 +1,7 @@
 .structure_header--title::before{
     content: '';
     display: inline-block;
-    background-image: url(../images/icons/title_icons/title_icon_1.svg);
+    background-image: url(../images/icons/title_icons/title_icon_structure1.svg);
     background-position: center;
     background-repeat: no-repeat;
     width: 30px;
@@ -77,8 +77,53 @@
 }
 
 .structure_info_item--subscription{
-    @include font(16px, 20px, 700);
+    @include font(16px, 20px, 400);
     font-family: $main-font;
     color: rgb(70, 70, 70);
     margin-bottom: 20px;
 }
+
+@media (min-width: 768px) {
+    .structure_header--title::before{
+        content: '';
+        background-image: url(../images/icons/title_icons/title_icon_structure2.svg);
+    }
+
+    .structure_header--title{
+        @include font(32px, 78px, 700);
+        text-transform: uppercase;
+        font-family: $secondary-font;
+        margin-bottom: 22px;
+    }
+
+    .structure_info {
+        margin-bottom: 70px;
+    }
+
+    .structure_info_item{
+        width: 300px;
+        height: 292px;
+        margin-bottom: 20px;
+    }
+
+    .structure_info_item:nth-child(n+3){
+        margin-bottom: 0;
+    }
+
+    .structure_info_item--wrapper{
+        width: 264px;
+        height: 260px;
+    }
+
+    .structure_info_item--title{
+        @include font(30px, 28px, 700);
+    }
+ 
+}
+
+@media (min-width: 1680px) {
+    
+  }
+
+
+  
