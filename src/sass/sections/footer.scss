@@ -142,3 +142,47 @@
 .footer_bottom_box a:focus{
     color: rgb(255, 255, 255);
 }
+
+@media (min-width: 768px) {
+    .footer_top{
+        position: relative;
+        padding-top: 100px;
+    }
+    
+    .footer_top_hidden_btn-item{
+        content: '';
+        position: absolute;
+        display: block;
+        right: 0;
+        width: 58px;
+        height: 58px;
+        background-color: #333333;
+        background-image: url(../images/icons/up-arrow.svg);
+        background-position: center;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+    
+    .footer_top--big_box{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_social_media--list{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .footer_social_media--item{
+        margin-right: 0;
+    }
+
+    .footer_top_adress,
+    .footer_top_contacts{
+        margin-bottom: 0;
+    }
+
+    .footer_top--small_box{
+        text-align: center;
+    }
+}
