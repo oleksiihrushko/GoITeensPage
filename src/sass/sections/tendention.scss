@@ -1,0 +1,138 @@
+.tendention {
+    background-color: #fff;
+    padding-top: 58px;
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 48px;
+        padding-top: 62px;
+    }
+
+    @media (min-width: 1680px) {
+        margin-bottom: 96px;
+        padding-top: 116px;
+    }
+
+    &__list {
+        margin-bottom: 42px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 70px;
+        }
+
+        @media (min-width: 1680px) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        @media (min-width: 1680px){
+        width: 650px;
+        }
+    }
+
+    &__item:first-child {
+        @media (min-width: 1680px){
+            padding-left: 114px;
+        }
+    }
+
+    &__text {
+        font-family: $main-font;
+        @include font(14px, 20px , 400);
+        color: #464646;
+        margin-bottom: 20px;
+        position: relative;
+
+        &:last-child {
+            @media (min-width: 768px) {
+                margin-bottom: 28px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            @include font(18px, 25px , 400);
+        }
+
+        @media (min-width: 1680px) {
+            @include font(20px, 35px , 400);
+        }
+
+        &:first-child::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 17px;
+            height: 14px;
+            background-repeat: no-repeat;
+            background-image: url(../../images/icons/quote.png);
+            background-size: contain;
+            top: -21px;
+
+            @media (min-width: 768px) {
+                width: 26px;
+                height: 20px;
+                background-image: url(../../images/icons/quote_tablet.png);
+                left: -34px;
+            }
+
+            @media (min-width: 768px) {
+                left: -42px;
+            }
+        }
+    }
+
+    &__programm {
+        position: relative;
+        font-family: $main-font;
+        @include font(18px, 24px , 400);
+        text-align: center;
+        color: #fff;
+        width: 280px;
+        height: 230px;
+        background-color: #7550de;
+        border-radius: 8px;
+        padding: 28px 24px;
+
+        @media (min-width: 768px) {
+            width: 620px;
+            @include font(20px, 28px , 400);
+            padding: 38px 78px;
+            text-align: left;
+            height: 185px;
+        }
+
+        @media (min-width: 1680px) {
+            width: 1300px;
+            height: 228px;
+            @include font(25px, 35px , 400);
+            padding: 60px 230px
+        }
+
+        &::before {
+            display: block;
+            content: "";
+            width: 60px;
+            height: 2px;
+            background-color: rgb(233, 172, 56);
+            margin: 0 auto;
+            margin-bottom: 12px;
+
+            @media (min-width: 768px) {
+                position: absolute;
+                width: 2px;
+                height: 100px;
+                left: 52px;
+                top: 45px;
+            }
+
+            @media (min-width: 1680px) {
+                left: 202px;
+                height: 85px;
+                top: 70px;
+            }
+        }
+    }
+}
