@@ -38,10 +38,13 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 30px;
-        justify-content: space-between;
 
         @media (min-width: 768px) {
             margin-bottom: 47px;
+        }
+
+        @media (min-width: 768px) {
+            justify-content: space-between;
         }
     }
 
