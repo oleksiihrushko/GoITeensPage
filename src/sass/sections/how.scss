@@ -90,19 +90,18 @@
   background-color: #fbeed7;
 }
 
-
 @media (min-width: 768px) {
   .how__title {
     @include font(33px, 78px, 700);
     letter-spacing: 0.66px;
     color: #222222;
-    padding: 31px 0 0 40px;
+    padding-left: 40px;
   }
 
   .how__title::before {
     background-image: url(/images/icons/title_icons/title_icon_2.svg);
     background-color: #fcae26;
-    top: 56px;
+    top: 25px;
     left: 0px;
   }
 
@@ -130,10 +129,12 @@
   .how__item {
     width: 212px;
     list-style-type: none;
+  }
+}
 
-    &:nth-last-child(n+3) {
-      margin-bottom: 36px;
-    }
+@media (min-width: 768px) and (max-width: 1679px) {
+  .how__item:nth-last-child(n+3) {
+    margin-bottom: 36px;
   }
 }
 
@@ -165,6 +166,10 @@
 
   .how__item {
     width: 244px;
-    margin-right: 47px;
+    margin-right: 45px;
+
+    &:nth-last-child(n+5) {
+      margin-bottom: 36px;
+    }
   }
 }
