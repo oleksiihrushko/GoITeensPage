@@ -22,7 +22,7 @@
     &::before {
       content: '';
       position: absolute;
-      background-image: url(/images/icons/title_icons/title_icon_1.svg);
+      background-image: url(../images/icons/title_icons/title_icon_1.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-color: #e9ac38;
@@ -55,17 +55,17 @@
   }
 
   &__item:nth-child(1)::before {
-    background-image: url(/images/icons/section_2_icons/1_.png);
+    background-image: url(../images/icons/section_2_icons/1_.png);
     background-color: #fbeed7;
   }
 
   &__item:nth-child(2)::before {
-    background-image: url(/images/icons/section_2_icons/2_.png);
+    background-image: url(../images/icons/section_2_icons/2_.png);
     background-color: #f8e0d7;
   }
 
   &__item:nth-child(3)::before {
-    background-image: url(/images/icons/section_2_icons/3_.png);
+    background-image: url(../images/icons/section_2_icons/3_.png);
     background-color: #e3dcf8;
   }
 
@@ -75,17 +75,17 @@
   }
 
   &__item:nth-child(5)::before {
-    background-image: url(/images/icons/section_2_icons/5_.png);
+    background-image: url(../images/icons/section_2_icons/5_.png);
     background-color: #e3dcf8;
   }
 
   &__item:nth-child(6)::before {
-    background-image: url(/images/icons/section_2_icons/6_.png);
+    background-image: url(../images/icons/section_2_icons/6_.png);
     background-color: #f8e0d7;
   }
 
   &__item:nth-child(7)::before {
-    background-image: url(/images/icons/section_2_icons/7_.png);
+    background-image: url(../images/icons/section_2_icons/7_.png);
     background-color: #fbeed7;
   }
 }
@@ -98,7 +98,7 @@
     padding-left: 40px;
 
     &::before {
-      background-image: url(/images/icons/title_icons/title_icon_2.svg);
+      background-image: url(../images/icons/title_icons/title_icon_2.svg);
       background-color: #fcae26;
       top: 25px;
       left: 0px;
