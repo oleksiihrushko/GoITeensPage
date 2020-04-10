@@ -3,61 +3,61 @@
 }
 
 .footer_top {
-    margin-left: 46px ;
-}
-
-.footer_top_logo{
+    padding-left: 46px ;
     padding-top: 42px;
-    margin-bottom: 14px;
-}
+    padding-bottom: 32px;
 
-.footer_top_logo--item {
-    display: block;
-    background-image: url(../images/icons/goiteens_logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 108px;
-    height: 30px;
-}
+    &_logo{
+        margin-bottom: 14px;
+    }
 
-.footer_top_adress,
-.footer_top_contacts{
-    @include font(14px, 20px,400);
-    color: rgb(150, 153, 166);
-    font-family: $main-font;
-    margin-bottom: 30px;
-}
+    &_logo--item {
+        display: block;
+        background-image: url(../images/icons/goiteens_logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 108px;
+        height: 30px;
+    }
 
-.footer_top_task{
-    margin-bottom: 34px;
-}
+    &_adress,
+    &_contacts{
+        @include font(14px, 20px,400);
+        color: rgb(150, 153, 166);
+        font-family: $main-font;
+        margin-bottom: 30px;
+    }
 
-.footer_top_task--btn{
-    border-style: none;
-    border-radius: 5px;
-    padding: 12px;
-    background-color: #e9ac38;
-    box-shadow: 0px 3px 5px 0px rgba(233, 172, 56, 0.4);
-    @include font(16px,16px,700);
-    color: rgb(246, 249, 250);
-    font-family: $secondary-font;
-}
+    &_task{
+        margin-bottom: 34px;
+    }
 
-.footer_top_task--btn:hover{
-    background-color: rgb(220, 145, 41);
-    box-shadow: 0px 3px 5px 0px rgba(233, 172, 56, 0.4);
-    border-radius: 5px;
-}
+    &_task--btn{
+        border-style: none;
+        border-radius: 5px;
+        padding: 12px;
+        background-color: #e9ac38;
+        box-shadow: 0px 3px 5px 0px rgba(233, 172, 56, 0.4);
+        @include font(16px,16px,700);
+        color: rgb(246, 249, 250);
+        font-family: $secondary-font;
+    }
 
-.footer_top_task--btn:focus{
-    background-color: rgb(220, 145, 41);
-    box-shadow: 0px 3px 5px 0px rgba(233, 172, 56, 0.4);
-    border-radius: 5px;
+    &_task--btn:hover{
+        background-color: rgb(220, 145, 41);
+        box-shadow: 0px 3px 5px 0px rgba(233, 172, 56, 0.4);
+        border-radius: 5px;
+    }
+
+    &_task--btn:focus{
+        background-color: rgb(220, 145, 41);
+        box-shadow: 0px 3px 5px 0px rgba(233, 172, 56, 0.4);
+        border-radius: 5px;
+    }
 }
 
 .footer_social_media--list{
     display: flex;
-    padding-bottom: 32px;
 }
 
 .footer_social_media--item{
@@ -121,60 +121,68 @@
 
 .footer_bottom{
     background-color: #111;
-}
-
-.footer_bottom_box{
-    margin-left: 46px;
-    @include font(12px,24px,400);
-    font-family: $secondary-font;
-    padding-top: 14px;
+     padding-top: 14px;
     padding-bottom: 14px;
-}
 
-.footer_bottom_box a{
-    color: rgb(98, 98, 99);
-}
+    &_box{
+        padding-left: 46px;
+        @include font(12px,24px,400);
+        font-family: $secondary-font;
+    }
 
-.footer_bottom_box a:hover{
-    color: rgb(255, 255, 255);
-}
+    &_box a{
+        color: rgb(98, 98, 99);
+    }
 
-.footer_bottom_box a:focus{
-    color: rgb(255, 255, 255);
-}
+    &_box a:hover{
+        color: rgb(255, 255, 255);
+    }
 
+    &_box a:focus{
+        color: rgb(255, 255, 255);
+    }
+}
 @media (min-width: 768px) {
     .footer_top{
         position: relative;
         margin: 0 auto;
-    }
-    
-    .footer_top_hidden_btn-item{
-        content: '';
-        position: absolute;
-        display: block;
-        right: -13%;
-        margin-right: 20px;
-        width: 58px;
-        height: 58px;
-        background-color: rgb(51, 51, 51);
-        background-image: url(../images/icons/up-arrow.svg);
-        box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.5);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 30%;
-        transform: translateY(-50%);
-        border-radius: 50%;
-    }
+        
+        &_hidden_btn-item{
+            content: '';
+            position: absolute;
+            display: block;
+            right: -13%;
+            margin-right: 20px;
+            width: 58px;
+            height: 58px;
+            background-color: rgb(51, 51, 51);
+            background-image: url(../images/icons/up-arrow.svg);
+            box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.5);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 30%;
+            transform: translateY(-100%);
+            border-radius: 50%;
+        }
 
-    .footer_top_hidden_btn-item:hover {
-        box-shadow: 0px 7px 12px 0px rgba(255, 255, 255, 0.5);
-        background-size: 40%;
-    }
+        &_hidden_btn-item:hover {
+            box-shadow: 0px 7px 12px 0px rgba(255, 255, 255, 0.5);
+            background-size: 40%;
+        }
 
-    .footer_top--big_box{
-        display: flex;
-        justify-content: space-between;
+        &--big_box{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_adress,
+        &_contacts{
+            margin-bottom: 0;
+        }
+
+        &--small_box{
+            text-align: center;
+        }
     }
 
     .footer_social_media--list{
@@ -186,17 +194,8 @@
         margin-right: 0;
     }
 
-    .footer_top_adress,
-    .footer_top_contacts{
-        margin-bottom: 0;
-    }
-
     .footer_bottom_box{
         margin: 0 auto;
-    }
-
-    .footer_top--small_box{
-        text-align: center;
     }
 }
 
@@ -213,7 +212,10 @@
 
     .footer_top_hidden_btn-item{
         right: -5%;
-        bottom: -25%;
+        bottom: -35%;
     }
 
+    .footer_top_task{
+        margin-bottom: 0;
+    }
 }
