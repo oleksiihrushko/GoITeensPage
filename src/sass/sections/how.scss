@@ -11,6 +11,7 @@
 }
 
 .how__title {
+  position: relative;
   @include font(20px, 78px, 700);
   letter-spacing: 0.4px;
   text-transform: uppercase;
@@ -31,8 +32,8 @@
   width: 30px;
   height: 30px;
   display: block;
-  top: 55px;
-  left: 20px;
+  top: 25px;
+  left: 0px;
 }
 
 .how__item--text {
@@ -101,8 +102,8 @@
   .how__title::before {
     background-image: url(/images/icons/title_icons/title_icon_2.svg);
     background-color: #fcae26;
-    top: 84px;
-    left: 70px;
+    top: 56px;
+    left: 0px;
   }
 
   .how__item--text {
@@ -159,16 +160,11 @@
 
   .how__list {
     width: 1234px;
+    justify-content: left;
   }
 
   .how__item {
     width: 244px;
-    
     margin-right: 47px;
-  }
-
-  .how__title::before {
-    top: 84px;
-    left: 180px;
   }
 }
